@@ -1,0 +1,29 @@
+PODS:
+  - ZXingObjC (3.0.2):
+    - ZXingObjC/All
+    - ZXingObjC/Aztec
+    - ZXingObjC/Core
+    - ZXingObjC/DataMatrix
+    - ZXingObjC/MaxiCode
+    - ZXingObjC/OneD
+    - ZXingObjC/QRCode
+  - ZXingObjC/All (3.0.2)
+  - ZXingObjC/Aztec (3.0.2):
+    - ZXingObjC/Core
+  - ZXingObjC/Core (3.0.2)
+  - ZXingObjC/DataMatrix (3.0.2):
+    - ZXingObjC/Core
+  - ZXingObjC/MaxiCode (3.0.2):
+    - ZXingObjC/Core
+  - ZXingObjC/OneD (3.0.2):
+    - ZXingObjC/Core
+  - ZXingObjC/QRCode (3.0.2):
+    - ZXingObjC/Core
+
+DEPENDENCIES:
+  - ZXingObjC (~> 3.0.1)
+
+SPEC CHECKSUMS:
+  ZXingObjC: ee1b5ade3c030d1ca4dc9012af358a80a6b96e24
+
+COCOAPODS: 0.32.1
