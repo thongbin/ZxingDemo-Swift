@@ -80,7 +80,7 @@ class TBCaptureMaskView: UIView{
         _pickImageButton.center = CGPoint(x: 320/2, y: self.frame.size.height/25*24 - _pickImageButton.frame.size.height/2)
         _pickImageButton.setTitle("从相册选", forState: .Normal)
         _pickImageButton.setTitleColor(UIColor(red: 0.53, green: 0.53, blue: 0.53, alpha: 1), forState: .Normal)
-        _pickImageButton.setTitleColor(.whiteColor(), forState: .Highlighted)
+        _pickImageButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Highlighted)
         _pickImageButton.titleEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         _pickImageButton.titleLabel.font = .systemFontOfSize(13.0)
         _pickImageButton.setBackgroundImage(UIImage(named: "barcode_btn"), forState: .Normal)
