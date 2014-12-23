@@ -60,7 +60,7 @@ class TBCaptureMaskView: UIView{
         
         _barcode_scan_box_mid?.frame = CGRect(x: 0.0, y: 0.0, width: 226.0, height: 176.5)
         _barcode_scan_box_mid?.center = CGPoint(x: frame.size.width/2, y: 250.0)
-        _barcode_scan_box_mid?.image = UIImage(named: "barcode_scan_box_mid").stretchableImageWithLeftCapWidth(1, topCapHeight: 0)
+        _barcode_scan_box_mid?.image = UIImage(named: "barcode_scan_box_mid")?.stretchableImageWithLeftCapWidth(1, topCapHeight: 0)
         self.addSubview(_barcode_scan_box_mid!)
         
         _barcode_scan_box_bottom?.frame = CGRect(x: 0.0, y: 0.0, width: 226.0, height: 23.5)
@@ -82,7 +82,7 @@ class TBCaptureMaskView: UIView{
         _pickImageButton.setTitleColor(UIColor(red: 0.53, green: 0.53, blue: 0.53, alpha: 1), forState: .Normal)
         _pickImageButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Highlighted)
         _pickImageButton.titleEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-        _pickImageButton.titleLabel.font = .systemFontOfSize(13.0)
+        _pickImageButton.titleLabel?.font = .systemFontOfSize(13.0)
         _pickImageButton.setBackgroundImage(UIImage(named: "barcode_btn"), forState: .Normal)
         _pickImageButton.addTarget(self, action: "pickImageFromPhotoLibraryAction:", forControlEvents: .TouchUpInside)
         self.addSubview(_pickImageButton)
